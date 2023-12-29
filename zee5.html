@@ -579,7 +579,7 @@ document.getElementById("loginButtons").addEventListener("click", function() {
         var localIP = window.location.hostname;
         var port = window.location.port;
 
-        if (window.location.hostname !== "127.0.0.1" && window.location.hostname !== "localhost") {
+        if (window.location.hostname !== "127.0.0.1" && window.location.hostname !== "") {
             var hostJio = window.location.host;
         } else {
             var hostJio = localIP + (port ? ':' + port : '');
