@@ -28,7 +28,7 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-    <a href="index.php" >JioTv <i class="fa fa-home" aria-hidden="true"></i></a>
+    <a href="index.html" >JioTv <i class="fa fa-home" aria-hidden="true"></i></a>
   <a href="sony.php"  >Sony LIV <i class="fa fa-tv"></i></a>
   <a href="zee5.php" class="active" >Zee5 <i class="fa fa-tv"></i></a>
   <a href="discovery.php" > Discovery+ <i class="fa fa-tv"></i></a>
@@ -579,7 +579,7 @@ document.getElementById("loginButtons").addEventListener("click", function() {
         var localIP = window.location.hostname;
         var port = window.location.port;
 
-        if (window.location.hostname !== "127.0.0.1" && window.location.hostname !== "https://akprogamers.github.io/Aktv2/zee5.html") {
+        if (window.location.hostname !== "127.0.0.1" && window.location.hostname !== "localhost") {
             var hostJio = window.location.host;
         } else {
             var hostJio = localIP + (port ? ':' + port : '');
